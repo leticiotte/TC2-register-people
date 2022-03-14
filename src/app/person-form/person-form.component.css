@@ -1,0 +1,24 @@
+i {
+  width: 10px;
+  position: relative;
+  right: 25px;
+  top: 3px;
+  font-size: 20px;
+  line-height: 50px;
+  z-index: 1;
+  color: #000000c7;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 25px;
+  padding: 5px;
+  width: 420px;
+}
+
+#submit {
+  background-color: rgb(94, 255, 169);
+  border: 1px solid rgb(0, 0, 0);
+  width: 100px;
+}
