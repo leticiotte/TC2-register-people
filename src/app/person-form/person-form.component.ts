@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Person } from '../model/person';
 
@@ -11,6 +11,7 @@ import { Person } from '../model/person';
 export class PersonFormComponent implements OnInit {
   person: Person | undefined;
   formCadastro!: FormGroup;
+  @Input() item : Person = {name: "", birthDate: "", photo: ""};
 
   constructor() {}
 

@@ -1,5 +1,5 @@
  export class Person {
-  nome: string = '';
+  name: string = '';
   birthDate: string = '';
   photo: string = '';
 }

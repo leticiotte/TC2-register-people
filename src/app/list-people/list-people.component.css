@@ -1,0 +1,25 @@
+.wrapper {
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+}
+
+dt {
+  float: left;
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}

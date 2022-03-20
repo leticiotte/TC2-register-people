@@ -4,7 +4,7 @@
   <div _ngcontent-xdb-c9="" class="field">
     <label _ngcontent-xdb-c9="" class="label">Nome</label>
     <div _ngcontent-xdb-c9="" class="control">
-      <input name="name" id="name" _ngcontent-xdb-c9="" type="text" placeholder="Nome da pessoa" class="input ng-pristine ng-valid ng-touched">
+      <input name="name" id="name" _ngcontent-xdb-c9="" type="text" placeholder="Nome da pessoa" class="input ng-pristine ng-valid ng-touched" [(ngModel)]="item.name">
       <i class="fa fa-user"></i>
     </div>
   </div>
@@ -12,7 +12,7 @@
   <div _ngcontent-xdb-c9="" class="field">
     <label _ngcontent-xdb-c9="" class="label">Data de nascimento</label>
     <div _ngcontent-xdb-c9="" class="control">
-      <input name="birthDate" id="birthDate" _ngcontent-xdb-c9="" type="date" class="input ng-pristine ng-valid ng-touched">
+      <input name="birthDate" id="birthDate" _ngcontent-xdb-c9="" type="date" class="input ng-pristine ng-valid ng-touched" [(ngModel)]="item.birthDate">
       <i></i>
     </div>
   </div>
@@ -20,13 +20,13 @@
   <div _ngcontent-xdb-c9="" class="field">
     <label _ngcontent-xdb-c9="" class="label">Foto</label>
     <div _ngcontent-xdb-c9="" class="control">
-      <input name="photo" id="photo" _ngcontent-xdb-c9="" type="url" placeholder="Url da imagem" class="input ng-pristine ng-valid ng-touched">
+      <input name="photo" id="photo" _ngcontent-xdb-c9="" type="url" placeholder="Url da imagem" class="input ng-pristine ng-valid ng-touched" [(ngModel)]="item.photo">
       <i class="fa fa-link"></i>
     </div>
   </div>
   <br>
 
-  <input name="submit" id="submit" type="submit" value="Salvar">
+  <input name="submit" id="submit" type="submit" value="Cadastrar">
 
   <div _ngcontent-xdb-c9="" class="column is-9">
     <div _ngcontent-xdb-c9="" class="columns is-multiline">

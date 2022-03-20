@@ -2,8 +2,11 @@
   <h1>Cadastro de pessoas</h1>
 </header>
 <main>
-  <div class="container mt-5 mb-5">
-    <app-person-form></app-person-form>
+  <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+    <div><app-person-form></app-person-form></div>
+    <div>
+      <app-list-people></app-list-people>
+    </div>
   </div>
 </main>
 
