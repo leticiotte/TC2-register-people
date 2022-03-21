@@ -1,36 +1,66 @@
-<form [formGroup]="formCadastro" (submit)="onSubmit()">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+<div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+  <div>
+    <form #personForm="ngForm" (submit)="onSubmit()" ngNativeValidate>
+      <link
+        rel="stylesheet"
+        href="https://criticalhits.com.br/wp-content/uploads/2021/11/tanjiro.jpg"
+        type="text/css"
+      />
 
-  <div _ngcontent-xdb-c9="" class="field">
-    <label _ngcontent-xdb-c9="" class="label">Nome</label>
-    <div _ngcontent-xdb-c9="" class="control">
-      <input name="name" id="name" _ngcontent-xdb-c9="" type="text" placeholder="Nome da pessoa" class="input ng-pristine ng-valid ng-touched" [(ngModel)]="item.name">
-      <i class="fa fa-user"></i>
-    </div>
-  </div>
-  <br>
-  <div _ngcontent-xdb-c9="" class="field">
-    <label _ngcontent-xdb-c9="" class="label">Data de nascimento</label>
-    <div _ngcontent-xdb-c9="" class="control">
-      <input name="birthDate" id="birthDate" _ngcontent-xdb-c9="" type="date" class="input ng-pristine ng-valid ng-touched" [(ngModel)]="item.birthDate">
-      <i></i>
-    </div>
-  </div>
-  <br>
-  <div _ngcontent-xdb-c9="" class="field">
-    <label _ngcontent-xdb-c9="" class="label">Foto</label>
-    <div _ngcontent-xdb-c9="" class="control">
-      <input name="photo" id="photo" _ngcontent-xdb-c9="" type="url" placeholder="Url da imagem" class="input ng-pristine ng-valid ng-touched" [(ngModel)]="item.photo">
-      <i class="fa fa-link"></i>
-    </div>
-  </div>
-  <br>
+      <div _ngcontent-xdb-c9="" class="field">
+        <label _ngcontent-xdb-c9="" class="label">Nome</label>
+        <div _ngcontent-xdb-c9="" class="control">
+          <input
+            name="name"
+            id="name"
+            _ngcontent-xdb-c9=""
+            type="text"
+            placeholder="Nome da pessoa"
+            class="input ng-pristine ng-valid ng-touched"
+            [(ngModel)]="name"
+          />
+          <i class="fa fa-user"></i>
+        </div>
+      </div>
+      <br />
+      <div _ngcontent-xdb-c9="" class="field">
+        <label _ngcontent-xdb-c9="" class="label">Data de nascimento</label>
+        <div _ngcontent-xdb-c9="" class="control">
+          <input
+            name="birthDate"
+            id="birthDate"
+            _ngcontent-xdb-c9=""
+            type="date"
+            class="input ng-pristine ng-valid ng-touched"
+            [(ngModel)]="birthDate"
+          />
+          <i></i>
+        </div>
+      </div>
+      <br />
+      <div _ngcontent-xdb-c9="" class="field">
+        <label _ngcontent-xdb-c9="" class="label">Foto</label>
+        <div _ngcontent-xdb-c9="" class="control">
+          <input
+            name="photo"
+            id="photo"
+            _ngcontent-xdb-c9=""
+            type="url"
+            placeholder="Url da imagem"
+            class="input ng-pristine ng-valid ng-touched"
+            [(ngModel)]="photo"
+          />
+          <i class="fa fa-link"></i>
+        </div>
+      </div>
+      <br />
 
-  <input name="submit" id="submit" type="submit" value="Cadastrar">
+      <input name="submit" id="submit" type="submit" value="Cadastrar" />
 
-  <div _ngcontent-xdb-c9="" class="column is-9">
-    <div _ngcontent-xdb-c9="" class="columns is-multiline">
-      <!---->
-    </div>
+
+    </form>
   </div>
-</form>
+  <div>
+    <app-list-people [list]="peopleList"></app-list-people>
+  </div>
+</div>

@@ -1,14 +1,18 @@
 <ul>
-  <dt *ngFor="let person of this.lista; let i = index" class="service-list ">
+  <dt *ngFor="let person of this.list; let i = index" class="service-list">
     <h3 align="center">{{ person.name }}</h3>
-    <img
-      class="center"
-      src={{person.photo}}
-      class="alignnone size-full wp-image-156"
-    />
+    <img *ngIf="person.photo !=  undefined" src="{{person.photo}}" class="center"  class="alignnone size-full wp-image-156" />
+    <img *ngIf="person.photo == undefined" src="https://criticalhits.com.br/wp-content/uploads/2021/11/tanjiro.jpg"  class="alignnone size-full wp-image-156" />
+
     <p align="center">{{ person.birthDate }}</p>
     <div class="wrapper">
-      <button align="center" type="button" class="btn btn-secondary" id={{i}}>
+      <button
+        align="center"
+        type="button"
+        class="delete-button"
+        id="{{ i }}"
+        (click)="deletarPessoa(person)"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -28,5 +32,4 @@
       </button>
     </div>
   </dt>
-
 </ul>
