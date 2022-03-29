@@ -2,4 +2,4 @@
 
 ## Descrição
 
-Repositório referente à atividade de cadastro de pessoas usando Forms
+Repositório referente à atividade de cadastro de pessoas usando Angular
